@@ -54,7 +54,7 @@
           }
         },
         "benefits": {
-          "type": "icon_with_text",
+          "type": "icon-with-text",
           "settings": {
             "layout": "vertical",
             "icon_1": "truck",

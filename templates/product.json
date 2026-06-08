@@ -39,10 +39,7 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
+        "quantity_selector": { "type": "quantity_selector", "settings": {} },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -55,16 +52,7 @@
           "settings": {}
         }
       },
-      "block_order": [
-        "vendor",
-        "title",
-        "price",
-        "rating",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description"
-      ],
+      "block_order": ["vendor", "title", "price", "rating", "variant_picker", "quantity_selector", "buy_buttons", "description"],
       "settings": {
         "enable_sticky_info": false,
         "color_scheme": "scheme-1",
@@ -84,30 +72,10 @@
     "store": {
       "type": "mm-store-product",
       "blocks": {
-        "p1": {
-          "type": "pill",
-          "settings": {
-            "label": "Grandi firme"
-          }
-        },
-        "p2": {
-          "type": "pill",
-          "settings": {
-            "label": "Saldi outlet"
-          }
-        },
-        "p3": {
-          "type": "pill",
-          "settings": {
-            "label": "Spedizione gratis"
-          }
-        },
-        "p4": {
-          "type": "pill",
-          "settings": {
-            "label": "Pagamento alla consegna"
-          }
-        }
+        "p1": { "type": "pill", "settings": { "label": "Outlet dal 2018" } },
+        "p2": { "type": "pill", "settings": { "label": "Grandi firme" } },
+        "p3": { "type": "pill", "settings": { "label": "Selezione a mano" } },
+        "p4": { "type": "pill", "settings": { "label": "Vetrina sempre nuova" } }
       },
       "block_order": [
         "p1",
@@ -120,37 +88,44 @@
         "caption": "Stessa qualità del negozio — capi selezionati a mano dal nostro team."
       }
     },
+    "steps": {
+      "type": "mm-product-steps",
+      "blocks": {
+        "s1": { "type": "step", "settings": { "icon": "🛒", "title": "Scegli e ordina", "text": "Taglia, colore e quantità — ordine in pochi tap." } },
+        "s2": { "type": "step", "settings": { "icon": "📦", "title": "Ricevi a casa", "text": "Spedizione gratuita, consegna in 2-5 giorni." } },
+        "s3": { "type": "step", "settings": { "icon": "💳", "title": "Paga se ti piace", "text": "Pagamento alla consegna, nessun anticipo." } }
+      },
+      "block_order": ["s1", "s2", "s3"],
+      "settings": { "heading": "Come funziona" }
+    },
+    "stats": {
+      "type": "mm-product-stats",
+      "blocks": {
+        "st1": { "type": "stat", "settings": { "number": "12.000+", "label": "Ordini consegnati" } },
+        "st2": { "type": "stat", "settings": { "number": "2.800+", "label": "Recensioni verificate" } },
+        "st3": { "type": "stat", "settings": { "number": "98%", "label": "Clienti soddisfatte" } }
+      },
+      "block_order": ["st1", "st2", "st3"],
+      "settings": {}
+    },
+    "features": {
+      "type": "mm-product-features",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "icon": "✨", "title": "Qualità premium", "text": "Materiali selezionati, cuciture resistenti." } },
+        "f2": { "type": "feature", "settings": { "icon": "👗", "title": "Vestibilità comoda", "text": "Bello e pratico per tutta la giornata." } },
+        "f3": { "type": "feature", "settings": { "icon": "🎨", "title": "Look versatile", "text": "Si abbina con tutto il guardaroba." } },
+        "f4": { "type": "feature", "settings": { "icon": "🏷️", "title": "Firma originale", "text": "100% autentico dal nostro outlet." } }
+      },
+      "block_order": ["f1", "f2", "f3", "f4"],
+      "settings": { "heading": "Perché amerai questo capo" }
+    },
     "reviews": {
       "type": "mm-reviews-carousel",
       "blocks": {
-        "r1": {
-          "type": "review",
-          "settings": {
-            "quote": "Capo perfetto, identico alle foto!",
-            "author": "Maria G."
-          }
-        },
-        "r2": {
-          "type": "review",
-          "settings": {
-            "quote": "Pagamento alla consegna comodissimo.",
-            "author": "Patrizia L."
-          }
-        },
-        "r3": {
-          "type": "review",
-          "settings": {
-            "quote": "Qualità top, prezzo imbattibile.",
-            "author": "Daniela R."
-          }
-        },
-        "r4": {
-          "type": "review",
-          "settings": {
-            "quote": "Spedizione veloce, tutto ok.",
-            "author": "Francesca M."
-          }
-        }
+        "r1": { "type": "review", "settings": { "quote": "Capo perfetto, identico alle foto!", "author": "Maria G." } },
+        "r2": { "type": "review", "settings": { "quote": "Qualità outlet vera, taglia giusta.", "author": "Patrizia L." } },
+        "r3": { "type": "review", "settings": { "quote": "Prezzo imbattibile per questa marca.", "author": "Daniela R." } },
+        "r4": { "type": "review", "settings": { "quote": "Riordinerò sicuramente.", "author": "Francesca M." } }
       },
       "block_order": [
         "r1",
@@ -161,6 +136,46 @@
       "settings": {
         "heading": "Dicono di noi"
       }
+    },
+    "size_tip": {
+      "type": "mm-size-tip",
+      "blocks": {
+        "t1": { "type": "tip", "settings": { "icon": "📏", "text": "Confronta le misure con un capo che ti sta bene." } },
+        "t2": { "type": "tip", "settings": { "icon": "👕", "text": "Preferisci comodo? Sali di mezza taglia." } },
+        "t3": { "type": "tip", "settings": { "icon": "💬", "text": "Hai dubbi? Contattaci prima di ordinare." } }
+      },
+      "block_order": ["t1", "t2", "t3"],
+      "settings": {
+        "heading": "Non sai quale taglia?",
+        "note": "Scrivici su WhatsApp — ti aiutiamo a scegliere gratis."
+      }
+    },
+    "brands": {
+      "type": "mm-brand-logos",
+      "blocks": {
+        "b1": { "type": "brand", "settings": { "name": "NIKE" } },
+        "b2": { "type": "brand", "settings": { "name": "ADIDAS" } },
+        "b3": { "type": "brand", "settings": { "name": "TOMMY" } },
+        "b4": { "type": "brand", "settings": { "name": "MAX MARA" } },
+        "b5": { "type": "brand", "settings": { "name": "LIU JO" } },
+        "b6": { "type": "brand", "settings": { "name": "EA7" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6"],
+      "settings": {
+        "heading": "Le firme nel nostro outlet",
+        "subheading": "",
+        "color_scheme": "scheme-1"
+      }
+    },
+    "faq": {
+      "type": "mm-product-faq",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "Come lavare e curare il capo?", "answer": "Segui l'etichetta interna. Consigliamo lavaggio a 30°, no asciugatrice." } },
+        "q2": { "type": "question", "settings": { "question": "La vestibilità è fedele alla taglia?", "answer": "Sì, standard del brand. Per più comodo, mezza taglia in più." } },
+        "q3": { "type": "question", "settings": { "question": "Posso restituirlo se non mi sta bene?", "answer": "Sì — 14 giorni per reso gratuito. Contattaci per il ritiro." } }
+      },
+      "block_order": ["q1", "q2", "q3"],
+      "settings": { "heading": "Domande sul capo" }
     },
     "related-products": {
       "type": "related-products",
@@ -184,7 +199,13 @@
   "order": [
     "main",
     "store",
+    "steps",
+    "stats",
+    "features",
     "reviews",
+    "size_tip",
+    "brands",
+    "faq",
     "related-products"
   ]
 }

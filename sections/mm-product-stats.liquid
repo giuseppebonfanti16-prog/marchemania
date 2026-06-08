@@ -1,0 +1,50 @@
+<section class="mm-product-stats">
+  <div class="page-width">
+    <div class="mm-product-stats__grid">
+      {%- for block in section.blocks -%}
+        <div class="mm-product-stats__item" {{ block.shopify_attributes }}>
+          <span class="mm-product-stats__number" data-mm-stat="{{ block.settings.number }}">{{ block.settings.number }}</span>
+          <span class="mm-product-stats__label">{{ block.settings.label }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Numeri social proof",
+  "tag": "section",
+  "class": "mm-section-product-stats",
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistica",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Numero",
+          "default": "12.000+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Etichetta",
+          "default": "Ordini consegnati"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Numeri social proof",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "12.000+", "label": "Ordini consegnati" } },
+        { "type": "stat", "settings": { "number": "2.800+", "label": "Recensioni verificate" } },
+        { "type": "stat", "settings": { "number": "98%", "label": "Clienti soddisfatte" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

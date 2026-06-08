@@ -1,0 +1,61 @@
+<section class="mm-product-faq">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-product-faq__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="mm-product-faq__list">
+      {%- for block in section.blocks -%}
+        <details class="mm-product-faq__item" {{ block.shopify_attributes }}>
+          <summary class="mm-product-faq__question">{{ block.settings.question }}</summary>
+          <div class="mm-product-faq__answer">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM FAQ prodotto",
+  "tag": "section",
+  "class": "mm-section-product-faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Domande sul capo"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Domanda",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Domanda",
+          "default": "Come lavare questo capo?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Risposta breve",
+          "default": "Segui le istruzioni sull'etichetta interna. In genere lavaggio a 30° e asciugatura naturale."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM FAQ prodotto",
+      "blocks": [
+        { "type": "question", "settings": { "question": "Come lavare e curare il capo?", "answer": "Segui l'etichetta interna. Consigliamo lavaggio a 30°, no asciugatrice per mantenere la forma." } },
+        { "type": "question", "settings": { "question": "La vestibilità è fedele alla taglia?", "answer": "Sì, in linea con lo standard del brand. Se preferisci più comodo, considera mezza taglia in più." } },
+        { "type": "question", "settings": { "question": "Posso restituirlo se non mi sta bene?", "answer": "Certo — hai 14 giorni per il reso gratuito. Contattaci e organizziamo il ritiro." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

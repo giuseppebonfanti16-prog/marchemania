@@ -561,9 +561,9 @@
       "stock_only": "Solo il {{ percent }}% rimasto"
     },
     "reviews": {
-      "title": "Valutazione eccellente",
-      "subtitle": "Oltre 2.800 clienti soddisfatte — recensioni verificate",
-      "verified": "Acquisto verificato"
+      "title": "4.9 stelle",
+      "subtitle": "2.800+ recensioni verificate",
+      "verified": "Verificate"
     }
   }
 }

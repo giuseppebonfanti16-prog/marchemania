@@ -1,0 +1,87 @@
+<section class="mm-store-product">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-store-product__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="mm-store-product__image">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 1200
+          | image_tag:
+            loading: 'lazy',
+            alt: section.settings.heading,
+            widths: '375, 550, 750, 900, 1200',
+            sizes: '(min-width: 750px) 720px, 100vw'
+        }}
+      {%- else -%}
+        <img
+          src="https://cdn.shopify.com/s/files/1/1006/1804/3769/files/marche_mania_esterno.png?v=1780930643"
+          alt="Marche Mania outlet"
+          loading="lazy"
+          width="1200"
+          height="800"
+        >
+      {%- endif -%}
+    </div>
+    {%- if section.settings.caption != blank -%}
+      <p class="mm-store-product__caption">{{ section.settings.caption }}</p>
+    {%- endif -%}
+    <div class="mm-store-product__pills">
+      {%- for block in section.blocks -%}
+        <span class="mm-store-product__pill" {{ block.shopify_attributes }}>{{ block.settings.label }}</span>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Negozio prodotto",
+  "tag": "section",
+  "class": "mm-section-store-product",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Foto negozio"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo breve",
+      "default": "Il nostro outlet fisico"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Didascalia",
+      "default": "Stessa qualità del negozio — selezionato a mano dal nostro team."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pill",
+      "name": "Badge",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Testo",
+          "default": "Grandi firme"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Negozio prodotto",
+      "blocks": [
+        { "type": "pill", "settings": { "label": "Grandi firme" } },
+        { "type": "pill", "settings": { "label": "Saldi outlet" } },
+        { "type": "pill", "settings": { "label": "100% originali" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

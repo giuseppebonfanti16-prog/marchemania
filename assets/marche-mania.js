@@ -4,6 +4,7 @@ class MarcheManiaTheme {
     this.initCountdown();
     this.initStockBar();
     this.initFaqAccessibility();
+    this.initReviewsCarousel();
   }
 
   initScrollReveal() {
@@ -84,6 +85,31 @@ class MarcheManiaTheme {
           summary.setAttribute('aria-expanded', item.open ? 'true' : 'false');
         });
       }
+    });
+  }
+
+  initReviewsCarousel() {
+    document.querySelectorAll('[data-mm-carousel]').forEach((track) => {
+      if (track.scrollWidth <= track.clientWidth) return;
+
+      let paused = false;
+      track.addEventListener('touchstart', () => { paused = true; }, { passive: true });
+      track.addEventListener('touchend', () => { paused = false; }, { passive: true });
+      track.addEventListener('mouseenter', () => { paused = true; });
+      track.addEventListener('mouseleave', () => { paused = false; });
+
+      setInterval(() => {
+        if (paused) return;
+        const card = track.querySelector('.mm-reviews-carousel__card');
+        if (!card) return;
+        const step = card.offsetWidth + 16;
+        const max = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft >= max - 2) {
+          track.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          track.scrollBy({ left: step, behavior: 'smooth' });
+        }
+      }, 4000);
     });
   }
 }

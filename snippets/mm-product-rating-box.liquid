@@ -1,16 +1,20 @@
 {% doc %}
-Large product rating box for above-the-fold social proof.
+Compact review summary card for the product info column.
 @example
 {% render 'mm-product-rating-box' %}
 {% enddoc %}
 
-<div class="mm-product-rating-box">
-  <div class="mm-product-rating-box__score">4.9</div>
-  <div>
-    <div class="mm-product-rating-box__stars" aria-hidden="true">★★★★★</div>
-    <div class="mm-product-rating-box__text">
-      <strong>{{ 'marche_mania.reviews.title' | t }}</strong>
-      {{ 'marche_mania.reviews.subtitle' | t }}
-    </div>
+<div class="mm-rating-card">
+  <div class="mm-rating-card__score-wrap">
+    <span class="mm-rating-card__score">4.9</span>
+    <span class="mm-rating-card__max">/5</span>
   </div>
+  <div class="mm-rating-card__body">
+    <div class="mm-rating-card__stars" aria-hidden="true">
+      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    </div>
+    <p class="mm-rating-card__title">{{ 'marche_mania.reviews.title' | t }}</p>
+    <p class="mm-rating-card__meta">{{ 'marche_mania.reviews.subtitle' | t }}</p>
+  </div>
+  <div class="mm-rating-card__badge">{{ 'marche_mania.reviews.verified' | t }}</div>
 </div>

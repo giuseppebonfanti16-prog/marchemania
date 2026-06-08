@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,8 +18,14 @@
             "custom_liquid": "{%- if product.vendor != blank -%}<span class=\"mm-vendor-tag\">{{ product.vendor }}</span>{%- endif -%}"
           }
         },
-        "title": { "type": "title", "settings": {} },
-        "price": { "type": "price", "settings": {} },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "rating": {
           "type": "custom_liquid",
           "settings": {
@@ -35,7 +50,10 @@
             "show_gift_card_recipient": false
           }
         },
-        "description": { "type": "description", "settings": {} }
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
       },
       "block_order": [
         "vendor",
@@ -56,7 +74,7 @@
         "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "show",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "none",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 16,
@@ -66,12 +84,37 @@
     "store": {
       "type": "mm-store-product",
       "blocks": {
-        "p1": { "type": "pill", "settings": { "label": "Grandi firme" } },
-        "p2": { "type": "pill", "settings": { "label": "Saldi outlet" } },
-        "p3": { "type": "pill", "settings": { "label": "Spedizione gratis" } },
-        "p4": { "type": "pill", "settings": { "label": "Pagamento alla consegna" } }
+        "p1": {
+          "type": "pill",
+          "settings": {
+            "label": "Grandi firme"
+          }
+        },
+        "p2": {
+          "type": "pill",
+          "settings": {
+            "label": "Saldi outlet"
+          }
+        },
+        "p3": {
+          "type": "pill",
+          "settings": {
+            "label": "Spedizione gratis"
+          }
+        },
+        "p4": {
+          "type": "pill",
+          "settings": {
+            "label": "Pagamento alla consegna"
+          }
+        }
       },
-      "block_order": ["p1", "p2", "p3", "p4"],
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
       "settings": {
         "heading": "Il nostro outlet fisico",
         "caption": "Stessa qualità del negozio — capi selezionati a mano dal nostro team."
@@ -80,13 +123,44 @@
     "reviews": {
       "type": "mm-reviews-carousel",
       "blocks": {
-        "r1": { "type": "review", "settings": { "quote": "Capo perfetto, identico alle foto!", "author": "Maria G." } },
-        "r2": { "type": "review", "settings": { "quote": "Pagamento alla consegna comodissimo.", "author": "Patrizia L." } },
-        "r3": { "type": "review", "settings": { "quote": "Qualità top, prezzo imbattibile.", "author": "Daniela R." } },
-        "r4": { "type": "review", "settings": { "quote": "Spedizione veloce, tutto ok.", "author": "Francesca M." } }
+        "r1": {
+          "type": "review",
+          "settings": {
+            "quote": "Capo perfetto, identico alle foto!",
+            "author": "Maria G."
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "quote": "Pagamento alla consegna comodissimo.",
+            "author": "Patrizia L."
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "quote": "Qualità top, prezzo imbattibile.",
+            "author": "Daniela R."
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "quote": "Spedizione veloce, tutto ok.",
+            "author": "Francesca M."
+          }
+        }
       },
-      "block_order": ["r1", "r2", "r3", "r4"],
-      "settings": { "heading": "Dicono di noi" }
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "heading": "Dicono di noi"
+      }
     },
     "related-products": {
       "type": "related-products",

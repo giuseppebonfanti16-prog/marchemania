@@ -1,0 +1,16 @@
+{% doc %}
+Large product rating box for above-the-fold social proof.
+@example
+{% render 'mm-product-rating-box' %}
+{% enddoc %}
+
+<div class="mm-product-rating-box">
+  <div class="mm-product-rating-box__score">4.9</div>
+  <div>
+    <div class="mm-product-rating-box__stars" aria-hidden="true">★★★★★</div>
+    <div class="mm-product-rating-box__text">
+      <strong>{{ 'marche_mania.reviews.title' | t }}</strong>
+      {{ 'marche_mania.reviews.subtitle' | t }}
+    </div>
+  </div>
+</div>

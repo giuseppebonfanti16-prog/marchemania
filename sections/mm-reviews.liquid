@@ -1,7 +1,14 @@
-<section class="mm-reviews mm-scroll-reveal color-{{ section.settings.color_scheme }} gradient">
+<section class="mm-reviews">
   <div class="page-width">
     {%- if section.settings.heading != blank -%}
       <h2 class="mm-section-heading center">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.show_summary -%}
+      <div class="mm-reviews__summary">
+        <div class="mm-reviews__score">4.9</div>
+        <div class="mm-reviews__stars" aria-hidden="true">★★★★★</div>
+        <p class="mm-reviews__score-label">{{ section.settings.summary_text | default: 'Oltre 2.800 recensioni verificate' }}</p>
+      </div>
     {%- endif -%}
     <div class="mm-reviews__grid">
       {%- for block in section.blocks -%}
@@ -10,7 +17,8 @@
             {%- for i in (1..5) -%}★{%- endfor -%}
           </div>
           <p class="mm-reviews__quote">"{{ block.settings.quote }}"</p>
-          <p class="mm-reviews__author">— {{ block.settings.author }}</p>
+          <p class="mm-reviews__author">{{ block.settings.author }}</p>
+          <span class="mm-reviews__verified">✓ {{ 'marche_mania.reviews.verified' | t }}</span>
         </div>
       {%- endfor -%}
     </div>
@@ -27,7 +35,19 @@
       "type": "text",
       "id": "heading",
       "label": "Titolo",
-      "default": "Cosa dicono i nostri clienti"
+      "default": "Cosa dicono le nostre clienti"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_summary",
+      "label": "Mostra riepilogo valutazione",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "summary_text",
+      "label": "Testo riepilogo",
+      "default": "Valutazione 4.9/5 — oltre 2.800 recensioni verificate"
     },
     {
       "type": "color_scheme",

@@ -547,9 +547,14 @@
       "authentic": "100% originali"
     },
     "urgency": {
-      "message": "Offerta limitata — Solo pochi pezzi rimasti a questo prezzo!",
+      "message": "⚡ Offerta limitata — pochi pezzi rimasti a questo prezzo!",
       "stock_label": "Disponibilità",
-      "stock_only": "Solo {{ percent }}% rimasto"
+      "stock_only": "Solo il {{ percent }}% rimasto"
+    },
+    "reviews": {
+      "title": "Valutazione eccellente",
+      "subtitle": "Oltre 2.800 clienti soddisfatte — recensioni verificate",
+      "verified": "Acquisto verificato"
     }
   }
 }

@@ -1,0 +1,106 @@
+<section class="mm-product-highlights">
+  <div class="page-width">
+    <div class="mm-product-highlights__grid">
+      <div class="mm-product-highlights__image">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 900
+            | image_tag: loading: 'lazy', alt: section.settings.heading
+          }}
+        {%- else -%}
+          <img
+            src="https://cdn.shopify.com/s/files/1/1006/1804/3769/files/marche_mania_esterno.png?v=1780930643"
+            alt="Marche Mania outlet"
+            loading="lazy"
+            width="900"
+            height="675"
+          >
+        {%- endif -%}
+      </div>
+      <div>
+        {%- if section.settings.heading != blank -%}
+          <h2 class="mm-section-heading">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <p class="mm-section-subheading" style="margin-left:0;text-align:left;color:rgba(255,255,255,0.9);">{{ section.settings.text }}</p>
+        {%- endif -%}
+        <ul class="mm-product-highlights__list">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+          {%- endfor -%}
+        </ul>
+        {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_link }}" class="mm-btn mm-btn--primary" style="margin-top:2rem;">
+            {{ section.settings.button_label }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Highlights prodotto",
+  "tag": "section",
+  "class": "mm-section-product-highlights",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Perché acquistare da Marche Mania"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Intro",
+      "default": "Outlet di grandi firme dal 2018. Stessa qualità del negozio fisico, comodità dell'online."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Pulsante",
+      "default": "Scopri il negozio"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link pulsante"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Punto",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Testo",
+          "default": "Capi 100% originali delle migliori firme"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Highlights prodotto",
+      "blocks": [
+        { "type": "point", "settings": { "text": "Capi 100% originali — Nike, Adidas, Tommy, Max Mara, Liu Jo" } },
+        { "type": "point", "settings": { "text": "Spedizione gratuita in tutta Italia, consegna in 2-5 giorni" } },
+        { "type": "point", "settings": { "text": "Paghi solo alla consegna: zero rischi, massima tranquillità" } },
+        { "type": "point", "settings": { "text": "Garanzia soddisfatti o rimborsati entro 14 giorni" } },
+        { "type": "point", "settings": { "text": "Assistenza umana via WhatsApp — ti aiutiamo a scegliere la taglia" } },
+        { "type": "point", "settings": { "text": "Prezzi outlet fino al -70% rispetto al negozio ufficiale" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

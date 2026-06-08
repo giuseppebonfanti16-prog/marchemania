@@ -1,0 +1,119 @@
+<section class="mm-product-reviews-showcase">
+  <div class="page-width">
+    <div class="mm-product-reviews-showcase__header">
+      <div class="mm-product-reviews-showcase__badge">
+        <span aria-hidden="true">★★★★★</span>
+        {{ section.settings.badge_text }}
+      </div>
+      {%- if section.settings.heading != blank -%}
+        <h2 class="mm-section-heading center">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="mm-section-subheading center">{{ section.settings.subheading }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="mm-reviews__summary">
+      <div class="mm-reviews__score">4.9</div>
+      <div class="mm-reviews__stars" aria-hidden="true">★★★★★</div>
+      <p class="mm-reviews__score-label">{{ section.settings.summary_text }}</p>
+    </div>
+
+    <div class="mm-reviews__grid mm-reviews__grid--3">
+      {%- for block in section.blocks -%}
+        <article class="mm-reviews__card" {{ block.shopify_attributes }}>
+          <div class="mm-reviews__stars" aria-label="{{ block.settings.rating }} stelle su 5">
+            {%- for i in (1..block.settings.rating) -%}★{%- endfor -%}
+          </div>
+          <p class="mm-reviews__quote">"{{ block.settings.quote }}"</p>
+          <p class="mm-reviews__author">{{ block.settings.author }}</p>
+          {%- if block.settings.verified -%}
+            <span class="mm-reviews__verified">✓ {{ 'marche_mania.reviews.verified' | t }}</span>
+          {%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Recensioni prodotto",
+  "tag": "section",
+  "class": "mm-section-product-reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge",
+      "default": "Recensioni verificate"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Le clienti adorano Marche Mania"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Sottotitolo",
+      "default": "Migliaia di donne over 40 ci scelgono ogni mese per qualità, chiarezza e convenienza."
+    },
+    {
+      "type": "text",
+      "id": "summary_text",
+      "label": "Testo riepilogo",
+      "default": "Basato su oltre 2.800 recensioni verificate"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Recensione",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Stelle",
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Testo",
+          "default": "Finalmente un sito chiaro, scritte grandi e leggibili. Il capo è arrivato perfetto!"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Nome",
+          "default": "Maria G., 52 anni"
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Acquisto verificato",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Recensioni prodotto",
+      "blocks": [
+        { "type": "review", "settings": { "quote": "Finalmente un sito chiaro, scritte grandi e leggibili. Il capo è arrivato perfetto e identico alle foto!", "author": "Maria G., 52 anni" } },
+        { "type": "review", "settings": { "quote": "Pagamento alla consegna comodissimo. La taglia era giusta e la qualità da vero outlet.", "author": "Patrizia L., 47 anni" } },
+        { "type": "review", "settings": { "quote": "Tommy Hilfiger originale a un prezzo incredibile. Consigliatissimo alle amiche!", "author": "Daniela R., 55 anni" } },
+        { "type": "review", "settings": { "quote": "Spedizione veloce e assistenza gentilissima su WhatsApp. Riordinerò sicuramente.", "author": "Francesca M., 44 anni" } },
+        { "type": "review", "settings": { "quote": "Max Mara a prezzo outlet — non ci credevo! Tutto autentico, confezionato benissimo.", "author": "Silvia T., 58 anni" } },
+        { "type": "review", "settings": { "quote": "Sito semplice da usare anche per chi non è expert di internet. Bravi!", "author": "Anna P., 61 anni" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

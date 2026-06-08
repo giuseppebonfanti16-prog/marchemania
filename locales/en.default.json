@@ -536,9 +536,14 @@
       "authentic": "100% authentic"
     },
     "urgency": {
-      "message": "Limited offer — Only a few left at this price!",
+      "message": "⚡ Limited offer — only a few left at this price!",
       "stock_label": "Availability",
       "stock_only": "Only {{ percent }}% left"
+    },
+    "reviews": {
+      "title": "Excellent rating",
+      "subtitle": "Over 2,800 satisfied customers — verified reviews",
+      "verified": "Verified purchase"
     }
   }
 }

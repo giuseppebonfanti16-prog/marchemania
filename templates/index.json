@@ -123,12 +123,12 @@
     "reviews": {
       "type": "mm-reviews",
       "blocks": {
-        "r1": { "type": "review", "settings": { "rating": 5, "quote": "Qualità eccellente e prezzi imbattibili. Ho trovato la mia Nike preferita a metà prezzo!", "author": "Marco R." } },
-        "r2": { "type": "review", "settings": { "rating": 5, "quote": "Spedizione velocissima e pagamento alla consegna comodissimo. Consigliatissimo!", "author": "Giulia M." } },
-        "r3": { "type": "review", "settings": { "rating": 5, "quote": "Tommy Hilfiger originali a prezzi da outlet. Finalmente un negozio serio!", "author": "Luca B." } }
+        "r1": { "type": "review", "settings": { "rating": 5, "quote": "Sito chiaro, scritte grandi, capo perfetto. Finalmente un e-commerce pensato per noi!", "author": "Maria G., 52 anni" } },
+        "r2": { "type": "review", "settings": { "rating": 5, "quote": "Pagamento alla consegna comodissimo. Qualità outlet vera, consigliatissimo.", "author": "Patrizia L., 47 anni" } },
+        "r3": { "type": "review", "settings": { "rating": 5, "quote": "Tommy Hilfiger originali a metà prezzo. Le amiche mi hanno chiesto il link!", "author": "Daniela R., 55 anni" } }
       },
       "block_order": ["r1", "r2", "r3"],
-      "settings": { "heading": "Cosa dicono i nostri clienti", "color_scheme": "scheme-1" }
+      "settings": { "heading": "Cosa dicono le nostre clienti", "show_summary": true, "summary_text": "Valutazione 4.9/5 — oltre 2.800 recensioni verificate", "color_scheme": "scheme-1" }
     },
     "newsletter": {
       "type": "mm-newsletter",

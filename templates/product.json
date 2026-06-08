@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "deal_banner": {
@@ -15,14 +24,20 @@
             "custom_liquid": "{%- if product.vendor != blank -%}<span class=\"mm-vendor-tag\">{{ product.vendor }}</span>{%- endif -%}"
           }
         },
-        "title": { "type": "title", "settings": {} },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
         "rating": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% render 'mm-product-rating-box' %}"
           }
         },
-        "price": { "type": "price", "settings": {} },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
         "urgency": {
           "type": "custom_liquid",
           "settings": {
@@ -55,6 +70,7 @@
         },
         "benefits": {
           "type": "icon-with-text",
+          "disabled": true,
           "settings": {
             "layout": "vertical",
             "icon_1": "truck",
@@ -65,7 +81,10 @@
             "heading_3": "Paghi alla consegna — nessun anticipo"
           }
         },
-        "description": { "type": "description", "settings": {} },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "tab_shipping": {
           "type": "collapsible_tab",
           "settings": {
@@ -149,14 +168,69 @@
     "reviews_showcase": {
       "type": "mm-product-reviews-showcase",
       "blocks": {
-        "r1": { "type": "review", "settings": { "rating": 5, "quote": "Finalmente un sito chiaro, scritte grandi e leggibili. Il capo è arrivato perfetto e identico alle foto!", "author": "Maria G., 52 anni", "verified": true } },
-        "r2": { "type": "review", "settings": { "rating": 5, "quote": "Pagamento alla consegna comodissimo. La taglia era giusta e la qualità da vero outlet.", "author": "Patrizia L., 47 anni", "verified": true } },
-        "r3": { "type": "review", "settings": { "rating": 5, "quote": "Tommy Hilfiger originale a un prezzo incredibile. Consigliatissimo alle amiche!", "author": "Daniela R., 55 anni", "verified": true } },
-        "r4": { "type": "review", "settings": { "rating": 5, "quote": "Spedizione veloce e assistenza gentilissima. Riordinerò sicuramente.", "author": "Francesca M., 44 anni", "verified": true } },
-        "r5": { "type": "review", "settings": { "rating": 5, "quote": "Max Mara a prezzo outlet — tutto autentico, confezionato benissimo.", "author": "Silvia T., 58 anni", "verified": true } },
-        "r6": { "type": "review", "settings": { "rating": 5, "quote": "Sito semplice da usare anche per chi non è expert di internet. Bravi!", "author": "Anna P., 61 anni", "verified": true } }
+        "r1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Finalmente un sito chiaro, scritte grandi e leggibili. Il capo è arrivato perfetto e identico alle foto!",
+            "author": "Maria G., 52 anni",
+            "verified": true
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Pagamento alla consegna comodissimo. La taglia era giusta e la qualità da vero outlet.",
+            "author": "Patrizia L., 47 anni",
+            "verified": true
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Tommy Hilfiger originale a un prezzo incredibile. Consigliatissimo alle amiche!",
+            "author": "Daniela R., 55 anni",
+            "verified": true
+          }
+        },
+        "r4": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Spedizione veloce e assistenza gentilissima. Riordinerò sicuramente.",
+            "author": "Francesca M., 44 anni",
+            "verified": true
+          }
+        },
+        "r5": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Max Mara a prezzo outlet — tutto autentico, confezionato benissimo.",
+            "author": "Silvia T., 58 anni",
+            "verified": true
+          }
+        },
+        "r6": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Sito semplice da usare anche per chi non è expert di internet. Bravi!",
+            "author": "Anna P., 61 anni",
+            "verified": true
+          }
+        }
       },
-      "block_order": ["r1", "r2", "r3", "r4", "r5", "r6"],
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
       "settings": {
         "badge_text": "★ Recensioni verificate",
         "heading": "Le clienti adorano Marche Mania",
@@ -167,24 +241,85 @@
     "product_rich": {
       "type": "mm-product-rich",
       "blocks": {
-        "d1": { "type": "detail", "settings": { "title": "Qualità garantita", "items": "100% originale e autentico\nMateriali premium selezionati\nCuciture resistenti e curate\nControllo qualità in negozio\nCome lo vedi, così lo ricevi" } },
-        "d2": { "type": "detail", "settings": { "title": "Vantaggi esclusivi", "items": "Spedizione gratuita sempre\nPagamento alla consegna\nReso gratuito 14 giorni\nAssistenza WhatsApp dedicata\nGaranzia soddisfatti o rimborsati" } },
-        "d3": { "type": "detail", "settings": { "title": "Consigli per te", "items": "Look estivo fresco e versatile\nPerfetto per tutte le occasioni\nAbbina con jeans, shorts o gonna\nMust-have di stagione\nTaglie disponibili — chiedi consiglio" } }
+        "d1": {
+          "type": "detail",
+          "settings": {
+            "title": "Qualità garantita",
+            "items": "100% originale e autentico\nMateriali premium selezionati\nCuciture resistenti e curate\nControllo qualità in negozio\nCome lo vedi, così lo ricevi"
+          }
+        },
+        "d2": {
+          "type": "detail",
+          "settings": {
+            "title": "Vantaggi esclusivi",
+            "items": "Spedizione gratuita sempre\nPagamento alla consegna\nReso gratuito 14 giorni\nAssistenza WhatsApp dedicata\nGaranzia soddisfatti o rimborsati"
+          }
+        },
+        "d3": {
+          "type": "detail",
+          "settings": {
+            "title": "Consigli per te",
+            "items": "Look estivo fresco e versatile\nPerfetto per tutte le occasioni\nAbbina con jeans, shorts o gonna\nMust-have di stagione\nTaglie disponibili — chiedi consiglio"
+          }
+        }
       },
-      "block_order": ["d1", "d2", "d3"],
-      "settings": { "heading": "Tutto quello che devi sapere su questo capo" }
+      "block_order": [
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {
+        "heading": "Tutto quello che devi sapere su questo capo"
+      }
     },
     "highlights": {
       "type": "mm-product-highlights",
       "blocks": {
-        "p1": { "type": "point", "settings": { "text": "Capi 100% originali — Nike, Adidas, Tommy, Max Mara, Liu Jo" } },
-        "p2": { "type": "point", "settings": { "text": "Spedizione gratuita in tutta Italia, consegna in 2-5 giorni" } },
-        "p3": { "type": "point", "settings": { "text": "Paghi solo alla consegna: zero rischi, massima tranquillità" } },
-        "p4": { "type": "point", "settings": { "text": "Garanzia soddisfatti o rimborsati entro 14 giorni" } },
-        "p5": { "type": "point", "settings": { "text": "Assistenza umana — ti aiutiamo a scegliere la taglia giusta" } },
-        "p6": { "type": "point", "settings": { "text": "Prezzi outlet fino al -70% rispetto al negozio ufficiale" } }
+        "p1": {
+          "type": "point",
+          "settings": {
+            "text": "Capi 100% originali — Nike, Adidas, Tommy, Max Mara, Liu Jo"
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "text": "Spedizione gratuita in tutta Italia, consegna in 2-5 giorni"
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "text": "Paghi solo alla consegna: zero rischi, massima tranquillità"
+          }
+        },
+        "p4": {
+          "type": "point",
+          "settings": {
+            "text": "Garanzia soddisfatti o rimborsati entro 14 giorni"
+          }
+        },
+        "p5": {
+          "type": "point",
+          "settings": {
+            "text": "Assistenza umana — ti aiutiamo a scegliere la taglia giusta"
+          }
+        },
+        "p6": {
+          "type": "point",
+          "settings": {
+            "text": "Prezzi outlet fino al -70% rispetto al negozio ufficiale"
+          }
+        }
       },
-      "block_order": ["p1", "p2", "p3", "p4", "p5", "p6"],
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
       "settings": {
         "heading": "Perché acquistare da Marche Mania",
         "text": "Outlet di grandi firme dal 2018. La stessa qualità del nostro negozio fisico, con tutta la comodità dell'online.",
@@ -204,14 +339,52 @@
     "faq": {
       "type": "mm-faq",
       "blocks": {
-        "q1": { "type": "question", "settings": { "question": "Come scelgo la taglia giusta?", "answer": "<p>Consulta la guida taglie nella descrizione. Per qualsiasi dubbio, contattaci — ti rispondiamo entro 24 ore e ti aiutiamo a scegliere la taglia perfetta, senza impegno.</p>" } },
-        "q2": { "type": "question", "settings": { "question": "Quanto tempo ci vuole per la consegna?", "answer": "<p>La consegna avviene in <strong>2-5 giorni lavorativi</strong> in tutta Italia. Spedizione sempre gratuita.</p>" } },
-        "q3": { "type": "question", "settings": { "question": "Posso pagare alla consegna?", "answer": "<p>Sì! Paga al corriere con contanti o carta. Nessun anticipo richiesto.</p>" } },
-        "q4": { "type": "question", "settings": { "question": "Posso restituire questo articolo?", "answer": "<p>Certo! Hai <strong>14 giorni</strong> per il reso gratuito con rimborso completo.</p>" } },
-        "q5": { "type": "question", "settings": { "question": "Il prodotto è originale?", "answer": "<p>Assolutamente sì. Vendiamo solo capi <strong>100% originali</strong> delle grandi firme, selezionati nel nostro outlet.</p>" } }
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Come scelgo la taglia giusta?",
+            "answer": "<p>Consulta la guida taglie nella descrizione. Per qualsiasi dubbio, contattaci — ti rispondiamo entro 24 ore e ti aiutiamo a scegliere la taglia perfetta, senza impegno.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "Quanto tempo ci vuole per la consegna?",
+            "answer": "<p>La consegna avviene in <strong>2-5 giorni lavorativi</strong> in tutta Italia. Spedizione sempre gratuita.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Posso pagare alla consegna?",
+            "answer": "<p>Sì! Paga al corriere con contanti o carta. Nessun anticipo richiesto.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "Posso restituire questo articolo?",
+            "answer": "<p>Certo! Hai <strong>14 giorni</strong> per il reso gratuito con rimborso completo.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Il prodotto è originale?",
+            "answer": "<p>Assolutamente sì. Vendiamo solo capi <strong>100% originali</strong> delle grandi firme, selezionati nel nostro outlet.</p>"
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"],
-      "settings": { "heading": "Domande frequenti su questo prodotto" }
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "heading": "Domande frequenti su questo prodotto"
+      }
     },
     "related-products": {
       "type": "related-products",

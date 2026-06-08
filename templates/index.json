@@ -1,14 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "marquee": {
       "type": "mm-marquee",
       "blocks": {
-        "msg1": { "type": "message", "settings": { "text": "SPEDIZIONE GRATUITA", "highlight": "•" } },
-        "msg2": { "type": "message", "settings": { "text": "PAGAMENTO ALLA CONSEGNA", "highlight": "•" } },
-        "msg3": { "type": "message", "settings": { "text": "SALDI FINO AL -70%", "highlight": "•" } },
-        "msg4": { "type": "message", "settings": { "text": "GARANZIA SODDISFATTI O RIMBORSATI", "highlight": "•" } }
+        "msg1": {
+          "type": "message",
+          "settings": {
+            "text": "SPEDIZIONE GRATUITA",
+            "highlight": "•"
+          }
+        },
+        "msg2": {
+          "type": "message",
+          "settings": {
+            "text": "PAGAMENTO ALLA CONSEGNA",
+            "highlight": "•"
+          }
+        },
+        "msg3": {
+          "type": "message",
+          "settings": {
+            "text": "SALDI FINO AL -70%",
+            "highlight": "•"
+          }
+        },
+        "msg4": {
+          "type": "message",
+          "settings": {
+            "text": "GARANZIA SODDISFATTI O RIMBORSATI",
+            "highlight": "•"
+          }
+        }
       },
-      "block_order": ["msg1", "msg2", "msg3", "msg4"],
+      "block_order": [
+        "msg1",
+        "msg2",
+        "msg3",
+        "msg4"
+      ],
       "settings": {}
     },
     "hero": {
@@ -28,12 +66,45 @@
     "trust": {
       "type": "mm-trust-bar",
       "blocks": {
-        "t1": { "type": "item", "settings": { "icon": "🚚", "title": "Spedizione gratuita", "subtitle": "Consegna in 2-5 giorni" } },
-        "t2": { "type": "item", "settings": { "icon": "💳", "title": "Pagamento alla consegna", "subtitle": "Paga solo quando ricevi" } },
-        "t3": { "type": "item", "settings": { "icon": "✅", "title": "Soddisfatti o rimborsati", "subtitle": "Reso entro 14 giorni" } },
-        "t4": { "type": "item", "settings": { "icon": "🏷️", "title": "100% originali", "subtitle": "Grandi firme garantite" } }
+        "t1": {
+          "type": "item",
+          "settings": {
+            "icon": "🚚",
+            "title": "Spedizione gratuita",
+            "subtitle": "Consegna in 2-5 giorni"
+          }
+        },
+        "t2": {
+          "type": "item",
+          "settings": {
+            "icon": "💳",
+            "title": "Pagamento alla consegna",
+            "subtitle": "Paga solo quando ricevi"
+          }
+        },
+        "t3": {
+          "type": "item",
+          "settings": {
+            "icon": "✅",
+            "title": "Soddisfatti o rimborsati",
+            "subtitle": "Reso entro 14 giorni"
+          }
+        },
+        "t4": {
+          "type": "item",
+          "settings": {
+            "icon": "🏷️",
+            "title": "100% originali",
+            "subtitle": "Grandi firme garantite"
+          }
+        }
       },
-      "block_order": ["t1", "t2", "t3", "t4"],
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
       "settings": {}
     },
     "deal": {
@@ -45,20 +116,19 @@
     "featured": {
       "type": "featured-collection",
       "settings": {
+        "collection": "all",
+        "products_to_show": 8,
         "title": "I più venduti dell'estate",
         "heading_size": "h1",
         "description": "<p>I capi più richiesti del momento, selezionati dal nostro team outlet.</p>",
         "show_description": true,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "swipe_on_mobile": true,
+        "color_scheme": "scheme-1",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -66,6 +136,7 @@
         "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 36
       }
@@ -83,16 +154,65 @@
     "brands": {
       "type": "mm-brand-logos",
       "blocks": {
-        "b1": { "type": "brand", "settings": { "name": "NIKE" } },
-        "b2": { "type": "brand", "settings": { "name": "ADIDAS" } },
-        "b3": { "type": "brand", "settings": { "name": "TOMMY HILFIGER" } },
-        "b4": { "type": "brand", "settings": { "name": "MAX MARA" } },
-        "b5": { "type": "brand", "settings": { "name": "LIU JO" } },
-        "b6": { "type": "brand", "settings": { "name": "CALVIN KLEIN" } },
-        "b7": { "type": "brand", "settings": { "name": "EA7" } },
-        "b8": { "type": "brand", "settings": { "name": "THE NORTH FACE" } }
+        "b1": {
+          "type": "brand",
+          "settings": {
+            "name": "NIKE"
+          }
+        },
+        "b2": {
+          "type": "brand",
+          "settings": {
+            "name": "ADIDAS"
+          }
+        },
+        "b3": {
+          "type": "brand",
+          "settings": {
+            "name": "TOMMY HILFIGER"
+          }
+        },
+        "b4": {
+          "type": "brand",
+          "settings": {
+            "name": "MAX MARA"
+          }
+        },
+        "b5": {
+          "type": "brand",
+          "settings": {
+            "name": "LIU JO"
+          }
+        },
+        "b6": {
+          "type": "brand",
+          "settings": {
+            "name": "CALVIN KLEIN"
+          }
+        },
+        "b7": {
+          "type": "brand",
+          "settings": {
+            "name": "EA7"
+          }
+        },
+        "b8": {
+          "type": "brand",
+          "settings": {
+            "name": "THE NORTH FACE"
+          }
+        }
       },
-      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"],
+      "block_order": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ],
       "settings": {
         "heading": "Le firme che ami",
         "subheading": "Selezione curata di capi originali delle migliori marche internazionali.",
@@ -113,22 +233,77 @@
     "features": {
       "type": "mm-features-grid",
       "blocks": {
-        "f1": { "type": "feature", "settings": { "icon": "☀️", "title": "Stile estivo", "text": "Collezioni fresche e trendy per la bella stagione." } },
-        "f2": { "type": "feature", "settings": { "icon": "💰", "title": "Prezzi outlet", "text": "Sconti fino al 70% sulle migliori firme internazionali." } },
-        "f3": { "type": "feature", "settings": { "icon": "🔒", "title": "Acquisto sicuro", "text": "Pagamento alla consegna e reso gratuito entro 14 giorni." } }
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "icon": "☀️",
+            "title": "Stile estivo",
+            "text": "Collezioni fresche e trendy per la bella stagione."
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "icon": "💰",
+            "title": "Prezzi outlet",
+            "text": "Sconti fino al 70% sulle migliori firme internazionali."
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "icon": "🔒",
+            "title": "Acquisto sicuro",
+            "text": "Pagamento alla consegna e reso gratuito entro 14 giorni."
+          }
+        }
       },
-      "block_order": ["f1", "f2", "f3"],
-      "settings": { "heading": "Perché scegliere Marche Mania" }
+      "block_order": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "settings": {
+        "heading": "Perché scegliere Marche Mania"
+      }
     },
     "reviews": {
       "type": "mm-reviews",
       "blocks": {
-        "r1": { "type": "review", "settings": { "rating": 5, "quote": "Sito chiaro, scritte grandi, capo perfetto. Finalmente un e-commerce pensato per noi!", "author": "Maria G., 52 anni" } },
-        "r2": { "type": "review", "settings": { "rating": 5, "quote": "Pagamento alla consegna comodissimo. Qualità outlet vera, consigliatissimo.", "author": "Patrizia L., 47 anni" } },
-        "r3": { "type": "review", "settings": { "rating": 5, "quote": "Tommy Hilfiger originali a metà prezzo. Le amiche mi hanno chiesto il link!", "author": "Daniela R., 55 anni" } }
+        "r1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Sito chiaro, scritte grandi, capo perfetto. Finalmente un e-commerce pensato per noi!",
+            "author": "Maria G., 52 anni"
+          }
+        },
+        "r2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Pagamento alla consegna comodissimo. Qualità outlet vera, consigliatissimo.",
+            "author": "Patrizia L., 47 anni"
+          }
+        },
+        "r3": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Tommy Hilfiger originali a metà prezzo. Le amiche mi hanno chiesto il link!",
+            "author": "Daniela R., 55 anni"
+          }
+        }
       },
-      "block_order": ["r1", "r2", "r3"],
-      "settings": { "heading": "Cosa dicono le nostre clienti", "show_summary": true, "summary_text": "Valutazione 4.9/5 — oltre 2.800 recensioni verificate", "color_scheme": "scheme-1" }
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ],
+      "settings": {
+        "heading": "Cosa dicono le nostre clienti",
+        "color_scheme": "scheme-1"
+      }
     },
     "newsletter": {
       "type": "mm-newsletter",
@@ -142,12 +317,36 @@
     "faq": {
       "type": "mm-faq",
       "blocks": {
-        "q1": { "type": "question", "settings": { "question": "Come funziona il pagamento alla consegna?", "answer": "<p>Ordini online e paghi in contanti o con POS al corriere quando ricevi il pacco. Nessun anticipo richiesto.</p>" } },
-        "q2": { "type": "question", "settings": { "question": "La spedizione è davvero gratuita?", "answer": "<p>Sì, su tutti gli ordini. Consegna in 2-5 giorni lavorativi in tutta Italia.</p>" } },
-        "q3": { "type": "question", "settings": { "question": "I prodotti sono originali?", "answer": "<p>Assolutamente sì. Vendiamo esclusivamente capi originali delle grandi firme, selezionati dal nostro team.</p>" } }
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Come funziona il pagamento alla consegna?",
+            "answer": "<p>Ordini online e paghi in contanti o con POS al corriere quando ricevi il pacco. Nessun anticipo richiesto.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "La spedizione è davvero gratuita?",
+            "answer": "<p>Sì, su tutti gli ordini. Consegna in 2-5 giorni lavorativi in tutta Italia.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "I prodotti sono originali?",
+            "answer": "<p>Assolutamente sì. Vendiamo esclusivamente capi originali delle grandi firme, selezionati dal nostro team.</p>"
+          }
+        }
       },
-      "block_order": ["q1", "q2", "q3"],
-      "settings": { "heading": "Domande frequenti" }
+      "block_order": [
+        "q1",
+        "q2",
+        "q3"
+      ],
+      "settings": {
+        "heading": "Domande frequenti"
+      }
     }
   },
   "order": [

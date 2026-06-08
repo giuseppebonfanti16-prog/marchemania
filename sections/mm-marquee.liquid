@@ -1,0 +1,54 @@
+<div class="mm-marquee" aria-hidden="true">
+  <div class="mm-marquee__track">
+    {%- for i in (1..2) -%}
+      {%- for block in section.blocks -%}
+        <span class="mm-marquee__item">
+          {{ block.settings.text }}
+          {%- if block.settings.highlight != blank -%}
+            <span>{{ block.settings.highlight }}</span>
+          {%- endif -%}
+        </span>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "MM Marquee offerte",
+  "tag": "section",
+  "class": "mm-section-marquee",
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Messaggio",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Testo",
+          "default": "SPEDIZIONE GRATUITA"
+        },
+        {
+          "type": "text",
+          "id": "highlight",
+          "label": "Evidenziazione",
+          "default": "•"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Marquee offerte",
+      "blocks": [
+        { "type": "message", "settings": { "text": "SPEDIZIONE GRATUITA", "highlight": "•" } },
+        { "type": "message", "settings": { "text": "PAGAMENTO ALLA CONSEGNA", "highlight": "•" } },
+        { "type": "message", "settings": { "text": "SALDI FINO AL -70%", "highlight": "•" } },
+        { "type": "message", "settings": { "text": "GARANZIA SODDISFATTI O RIMBORSATI", "highlight": "•" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

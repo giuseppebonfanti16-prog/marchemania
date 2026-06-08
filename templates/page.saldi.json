@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "hero": {
+      "type": "mm-page-content",
+      "settings": {
+        "title": "Saldi e offerte",
+        "subtitle": "Fuori tutto — fino al -70% sulle grandi firme"
+      }
+    },
+    "deal": {
+      "type": "mm-deal-banner",
+      "settings": {
+        "text": "🔥 4 CAPI A 49,99€ — Offerta estiva limitata!"
+      }
+    },
+    "countdown": {
+      "type": "mm-countdown",
+      "settings": {
+        "heading": "I saldi terminano tra",
+        "subheading": "Non perdere le offerte esclusive. Stock limitato sui capi più richiesti.",
+        "end_date": "2026-08-31T23:59:59",
+        "button_label": "Acquista ora",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Saldi estivi",
+        "heading_size": "h1",
+        "description": "<p>I capi in promozione del momento. Affrettati, le taglie volano!</p>",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter": {
+      "type": "mm-newsletter",
+      "settings": {
+        "heading": "Ricevi le offerte in anteprima",
+        "subheading": "Iscriviti alla newsletter e scopri i saldi esclusivi prima di tutti.",
+        "placeholder": "La tua email",
+        "button_label": "Iscriviti"
+      }
+    }
+  },
+  "order": ["hero", "deal", "countdown", "featured", "newsletter"]
+}

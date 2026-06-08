@@ -1,0 +1,68 @@
+<section class="mm-features mm-scroll-reveal">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-section-heading center">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="mm-features__grid">
+      {%- for block in section.blocks -%}
+        <div class="mm-features__card" {{ block.shopify_attributes }}>
+          <div class="mm-features__emoji">{{ block.settings.icon }}</div>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Griglia vantaggi",
+  "tag": "section",
+  "class": "mm-section-features",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Perché scegliere Marche Mania"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Vantaggio",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icona",
+          "default": "☀️"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo",
+          "default": "Stile estivo"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Testo",
+          "default": "Collezioni fresche e trendy per la bella stagione."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Griglia vantaggi",
+      "blocks": [
+        { "type": "feature", "settings": { "icon": "☀️", "title": "Stile estivo", "text": "Collezioni fresche e trendy per la bella stagione." } },
+        { "type": "feature", "settings": { "icon": "💰", "title": "Prezzi outlet", "text": "Sconti fino al 70% sulle migliori firme internazionali." } },
+        { "type": "feature", "settings": { "icon": "🔒", "title": "Acquisto sicuro", "text": "Pagamento alla consegna e reso gratuito entro 14 giorni." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

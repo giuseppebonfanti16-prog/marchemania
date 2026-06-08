@@ -1,0 +1,22 @@
+{% doc %}
+Renders urgency messaging and stock bar on product pages.
+@param {number} [stock_percent] - Stock level percentage for visual bar
+@example
+{% render 'mm-urgency-bar', stock_percent: 28 %}
+{% enddoc %}
+
+{%- assign stock = stock_percent | default: 28 -%}
+
+<div class="mm-urgency" role="status">
+  🔥 {{ 'marche_mania.urgency.message' | t }}
+</div>
+
+<div class="mm-stock-bar" data-mm-stock="{{ stock }}">
+  <div class="mm-stock-bar__label">
+    <span>{{ 'marche_mania.urgency.stock_label' | t }}</span>
+    <span>{{ 'marche_mania.urgency.stock_only' | t: percent: stock }}</span>
+  </div>
+  <div class="mm-stock-bar__track">
+    <div class="mm-stock-bar__fill" style="width: 0%"></div>
+  </div>
+</div>

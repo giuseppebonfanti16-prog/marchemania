@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "hero": {
+      "type": "mm-page-content",
+      "settings": {
+        "title": "La nostra storia",
+        "subtitle": "Dall'outlet di famiglia al negozio online di riferimento"
+      }
+    },
+    "story": {
+      "type": "mm-brand-story",
+      "settings": {
+        "heading": "Come tutto è iniziato",
+        "text": "<p>Nel 2018, in una strada del centro storico delle Marche, Marco e Sara aprirono le porte del primo Marche Mania con un'insegna arancione e un sogno: portare le grandi firme a prezzi che tutti possono permettersi.</p><p>Le vetrine con i cartelli \"SALDI\", \"FUORI TUTTO\" e \"GRANDI FIRME\" attiravano subito l'attenzione. Nike, Adidas, Tommy Hilfiger, EA7 — capi originali a prezzi outlet che nessuno riusciva a eguagliare.</p><p>Il passaparola fece il resto. In pochi mesi, Marche Mania divenne il posto dove andare per chi voleva qualità senza spendere una fortuna.</p>",
+        "highlight": "\"La mania delle grandi firme\" — ecco da dove viene il nostro nome.",
+        "color_scheme": "scheme-1"
+      }
+    },
+    "timeline": {
+      "type": "mm-features-grid",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "icon": "2018", "title": "L'apertura", "text": "Il primo outlet Marche Mania apre le porte con grandi firme a prezzi shock." } },
+        "f2": { "type": "feature", "settings": { "icon": "2020", "title": "La crescita", "text": "Ampliamento del catalogo con Max Mara, Liu Jo, Calvin Klein e altre firme premium." } },
+        "f3": { "type": "feature", "settings": { "icon": "2024", "title": "Online", "text": "Nasce marchemania.shop: lo stesso outlet, ora a portata di click in tutta Italia." } }
+      },
+      "block_order": ["f1", "f2", "f3"],
+      "settings": { "heading": "La nostra timeline" }
+    },
+    "store": {
+      "type": "mm-store-banner",
+      "settings": {
+        "heading": "Il negozio che vedi online",
+        "text": "<p>Questa è la nostra vetrina — il cuore di Marche Mania. Ogni capo che vedi online passa dallo stesso processo di selezione del negozio fisico.</p>",
+        "button_label": "Scopri i saldi",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "reviews": {
+      "type": "mm-reviews",
+      "blocks": {
+        "r1": { "type": "review", "settings": { "rating": 5, "quote": "Conosco il negozio fisico da anni. Online è la stessa qualità!", "author": "Francesca L." } },
+        "r2": { "type": "review", "settings": { "rating": 5, "quote": "Una storia autentica, prodotti autentici. Bravi!", "author": "Davide C." } },
+        "r3": { "type": "review", "settings": { "rating": 5, "quote": "Finalmente l'outlet delle Marche anche online.", "author": "Michela S." } }
+      },
+      "block_order": ["r1", "r2", "r3"],
+      "settings": { "heading": "La community Marche Mania", "color_scheme": "scheme-1" }
+    }
+  },
+  "order": ["hero", "story", "timeline", "store", "reviews"]
+}

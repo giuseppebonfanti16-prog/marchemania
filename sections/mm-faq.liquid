@@ -1,0 +1,62 @@
+<section class="mm-faq mm-scroll-reveal">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-section-heading center">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="mm-faq__list">
+      {%- for block in section.blocks -%}
+        <details class="mm-faq__item" {{ block.shopify_attributes }}>
+          <summary class="mm-faq__question">{{ block.settings.question }}</summary>
+          <div class="mm-faq__answer rte">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM FAQ",
+  "tag": "section",
+  "class": "mm-section-faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Domande frequenti"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Domanda",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Domanda",
+          "default": "Come funziona il pagamento alla consegna?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Risposta",
+          "default": "<p>Ordini online e paghi in contanti o con POS al corriere quando ricevi il pacco. Nessun anticipo richiesto.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM FAQ",
+      "blocks": [
+        { "type": "question", "settings": { "question": "Come funziona il pagamento alla consegna?", "answer": "<p>Ordini online e paghi in contanti o con POS al corriere quando ricevi il pacco. Nessun anticipo richiesto.</p>" } },
+        { "type": "question", "settings": { "question": "La spedizione è davvero gratuita?", "answer": "<p>Sì, su tutti gli ordini. Consegna in 2-5 giorni lavorativi in tutta Italia.</p>" } },
+        { "type": "question", "settings": { "question": "I prodotti sono originali?", "answer": "<p>Assolutamente sì. Vendiamo esclusivamente capi originali delle grandi firme, selezionati dal nostro team.</p>" } },
+        { "type": "question", "settings": { "question": "Posso restituire un articolo?", "answer": "<p>Certo! Hai 14 giorni per il reso gratuito con la nostra garanzia soddisfatti o rimborsati.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

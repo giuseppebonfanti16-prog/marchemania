@@ -1,0 +1,72 @@
+<section class="mm-brands mm-scroll-reveal color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-section-heading center">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="mm-section-subheading center">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+    <div class="mm-brands__grid">
+      {%- for block in section.blocks -%}
+        <span class="mm-brands__name" {{ block.shopify_attributes }}>{{ block.settings.name }}</span>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Brand partner",
+  "tag": "section",
+  "class": "mm-section-brands",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Le firme che ami"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Sottotitolo",
+      "default": "Selezione curata di capi originali delle migliori marche internazionali."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Schema colori",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Nome brand",
+          "default": "NIKE"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Brand partner",
+      "blocks": [
+        { "type": "brand", "settings": { "name": "NIKE" } },
+        { "type": "brand", "settings": { "name": "ADIDAS" } },
+        { "type": "brand", "settings": { "name": "TOMMY HILFIGER" } },
+        { "type": "brand", "settings": { "name": "MAX MARA" } },
+        { "type": "brand", "settings": { "name": "LIU JO" } },
+        { "type": "brand", "settings": { "name": "CALVIN KLEIN" } },
+        { "type": "brand", "settings": { "name": "EA7" } },
+        { "type": "brand", "settings": { "name": "THE NORTH FACE" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

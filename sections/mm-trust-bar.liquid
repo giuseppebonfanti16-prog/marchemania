@@ -1,0 +1,61 @@
+<section class="mm-trust-bar mm-scroll-reveal">
+  <div class="page-width">
+    <div class="mm-trust-bar__grid">
+      {%- for block in section.blocks -%}
+        <div class="mm-trust-bar__item" {{ block.shopify_attributes }}>
+          <div class="mm-trust-bar__icon">{{ block.settings.icon }}</div>
+          <div class="mm-trust-bar__text">
+            <strong>{{ block.settings.title }}</strong>
+            <span>{{ block.settings.subtitle }}</span>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Barra fiducia",
+  "tag": "section",
+  "class": "mm-section-trust-bar",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Elemento",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icona (emoji)",
+          "default": "🚚"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo",
+          "default": "Spedizione gratuita"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Sottotitolo",
+          "default": "Su tutti gli ordini"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Barra fiducia",
+      "blocks": [
+        { "type": "item", "settings": { "icon": "🚚", "title": "Spedizione gratuita", "subtitle": "Consegna in 2-5 giorni" } },
+        { "type": "item", "settings": { "icon": "💳", "title": "Pagamento alla consegna", "subtitle": "Paga solo quando ricevi" } },
+        { "type": "item", "settings": { "icon": "✅", "title": "Soddisfatti o rimborsati", "subtitle": "Reso entro 14 giorni" } },
+        { "type": "item", "settings": { "icon": "🏷️", "title": "100% originali", "subtitle": "Grandi firme garantite" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

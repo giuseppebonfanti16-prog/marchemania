@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "hero": {
+      "type": "mm-page-content",
+      "settings": {
+        "title": "Domande frequenti",
+        "subtitle": "Tutto quello che devi sapere su Marche Mania"
+      }
+    },
+    "faq": {
+      "type": "mm-faq",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "I prodotti sono originali?", "answer": "<p>Sì, al 100%. Vendiamo esclusivamente capi originali delle grandi firme, selezionati personalmente dal nostro team.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "Come funziona il pagamento alla consegna?", "answer": "<p>Ordini online e paghi al corriere alla consegna. Accettiamo contanti e pagamento con POS. Nessun anticipo richiesto.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "La spedizione è gratuita?", "answer": "<p>Sì, su tutti gli ordini senza minimo di spesa. Consegna in 2-5 giorni lavorativi.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "Posso restituire un articolo?", "answer": "<p>Certo! Hai 14 giorni per il reso gratuito con rimborso completo.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "Come scelgo la taglia giusta?", "answer": "<p>Ogni scheda prodotto include una guida taglie. Per assistenza personalizzata, contattaci.</p>" } },
+        "q6": { "type": "question", "settings": { "question": "Avete un negozio fisico?", "answer": "<p>Sì! Il nostro outlet fisico Marche Mania è il cuore del brand. Online trovi la stessa qualità e selezione.</p>" } },
+        "q7": { "type": "question", "settings": { "question": "Quanto tempo ci vuole per la consegna?", "answer": "<p>2-5 giorni lavorativi in tutta Italia con corriere espresso.</p>" } },
+        "q8": { "type": "question", "settings": { "question": "Come posso contattarvi?", "answer": "<p>Puoi scriverci tramite il form contatti, email o WhatsApp. Rispondiamo entro 24 ore.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"],
+      "settings": { "heading": "" }
+    },
+    "trust": {
+      "type": "mm-trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "🚚", "title": "Spedizione gratuita", "subtitle": "Su tutti gli ordini" } },
+        "t2": { "type": "item", "settings": { "icon": "💳", "title": "Pagamento alla consegna", "subtitle": "Zero rischi" } },
+        "t3": { "type": "item", "settings": { "icon": "✅", "title": "Garanzia reso", "subtitle": "14 giorni" } },
+        "t4": { "type": "item", "settings": { "icon": "🏷️", "title": "Originali", "subtitle": "100% autentici" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": {}
+    }
+  },
+  "order": ["hero", "faq", "trust"]
+}

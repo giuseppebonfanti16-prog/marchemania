@@ -1,0 +1,92 @@
+<section class="mm-story mm-scroll-reveal color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <div class="mm-story__grid">
+      <div class="mm-story__image">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 900
+            | image_tag: loading: 'lazy', alt: section.settings.heading
+          }}
+        {%- else -%}
+          <img
+            src="https://cdn.shopify.com/s/files/1/1006/1804/3769/files/marche_mania_esterno.png?v=1780930643"
+            alt="Marche Mania outlet"
+            loading="lazy"
+            width="900"
+            height="600"
+          >
+        {%- endif -%}
+      </div>
+      <div class="mm-story__text">
+        {%- if section.settings.heading != blank -%}
+          <h2 class="mm-section-heading">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        <div class="rte">{{ section.settings.text }}</div>
+        {%- if section.settings.highlight != blank -%}
+          <div class="mm-story__highlight">{{ section.settings.highlight }}</div>
+        {%- endif -%}
+        {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_link }}" class="mm-btn mm-btn--primary" style="margin-top: 1.5rem;">
+            {{ section.settings.button_label }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Storia brand",
+  "tag": "section",
+  "class": "mm-section-story",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Immagine"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "La mania delle grandi firme"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Testo",
+      "default": "<p>Tutto è iniziato nel cuore delle Marche, con un sogno semplice: rendere accessibile l'abbigliamento delle grandi firme a chi ama lo stile senza compromessi sul budget.</p><p>Marche Mania nasce come outlet di famiglia e diventa rapidamente il punto di riferimento per chi cerca Nike, Adidas, Tommy Hilfiger, Max Mara, Liu Jo e tante altre marche premium a prezzi imbattibili.</p><p>Ogni capo è selezionato con cura: autentico, di qualità, pronto a raccontare la tua storia estiva.</p>"
+    },
+    {
+      "type": "text",
+      "id": "highlight",
+      "label": "Citazione in evidenza",
+      "default": "\"Non vendiamo solo abbigliamento. Vendiamo la passione per le grandi firme.\""
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Pulsante",
+      "default": "Scopri di più"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link pulsante"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Schema colori",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Storia brand"
+    }
+  ]
+}
+{% endschema %}

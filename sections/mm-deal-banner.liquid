@@ -1,0 +1,24 @@
+<div class="mm-deal-banner mm-scroll-reveal">
+  {{ section.settings.text }}
+</div>
+
+{% schema %}
+{
+  "name": "MM Banner offerta",
+  "tag": "section",
+  "class": "mm-section-deal-banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Testo banner",
+      "default": "🔥 4 CAPI A 49,99€ — Solo per oggi! Spedizione gratuita su tutti gli ordini"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Banner offerta"
+    }
+  ]
+}
+{% endschema %}

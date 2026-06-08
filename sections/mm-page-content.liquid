@@ -1,0 +1,39 @@
+<section class="mm-page-hero">
+  <div class="page-width">
+    <h1>{{ section.settings.title | default: page.title }}</h1>
+    {%- if section.settings.subtitle != blank -%}
+      <p class="mm-section-subheading">{{ section.settings.subtitle }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+<section class="mm-page-content">
+  <div class="page-width rte">
+    {{ page.content }}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Pagina brand",
+  "tag": "section",
+  "class": "mm-section-page",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo personalizzato"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sottotitolo"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Pagina brand"
+    }
+  ]
+}
+{% endschema %}

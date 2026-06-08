@@ -1,0 +1,78 @@
+<section class="mm-countdown mm-scroll-reveal">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-section-heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="mm-section-subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+    <div class="mm-countdown__timer" data-mm-countdown="{{ section.settings.end_date }}">
+      <div class="mm-countdown__unit">
+        <span class="mm-countdown__number" data-unit="days">00</span>
+        <span class="mm-countdown__label">Giorni</span>
+      </div>
+      <div class="mm-countdown__unit">
+        <span class="mm-countdown__number" data-unit="hours">00</span>
+        <span class="mm-countdown__label">Ore</span>
+      </div>
+      <div class="mm-countdown__unit">
+        <span class="mm-countdown__number" data-unit="minutes">00</span>
+        <span class="mm-countdown__label">Min</span>
+      </div>
+      <div class="mm-countdown__unit">
+        <span class="mm-countdown__number" data-unit="seconds">00</span>
+        <span class="mm-countdown__label">Sec</span>
+      </div>
+    </div>
+    {%- if section.settings.button_label != blank -%}
+      <a href="{{ section.settings.button_link }}" class="mm-btn mm-btn--primary">
+        {{ section.settings.button_label }}
+      </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Countdown saldi",
+  "tag": "section",
+  "class": "mm-section-countdown",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Fuori Tutto — Offerta a tempo"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Sottotitolo",
+      "default": "I saldi estivi terminano presto. Non perdere fino al -70% sulle grandi firme."
+    },
+    {
+      "type": "text",
+      "id": "end_date",
+      "label": "Data fine (ISO)",
+      "default": "2026-08-31T23:59:59",
+      "info": "Formato: AAAA-MM-GGTHH:MM:SS"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Pulsante",
+      "default": "Acquista ora"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link pulsante"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Countdown saldi"
+    }
+  ]
+}
+{% endschema %}

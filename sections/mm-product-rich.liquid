@@ -1,0 +1,68 @@
+<section class="mm-product-rich mm-scroll-reveal">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-section-heading center">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="mm-product-rich__grid">
+      {%- for block in section.blocks -%}
+        <div class="mm-product-rich__card" {{ block.shopify_attributes }}>
+          <h3>{{ block.settings.title }}</h3>
+          <ul>
+            {%- assign items = block.settings.items | newline_to_br | split: '<br />' -%}
+            {%- for item in items -%}
+              {%- if item != blank -%}
+                <li>{{ item | strip }}</li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Dettagli prodotto",
+  "tag": "section",
+  "class": "mm-section-product-rich",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Perché questo capo è speciale"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "detail",
+      "name": "Dettaglio",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titolo colonna",
+          "default": "Qualità garantita"
+        },
+        {
+          "type": "textarea",
+          "id": "items",
+          "label": "Elenco punti (uno per riga)",
+          "default": "100% originale\nMateriali premium\nCuciture resistenti"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Dettagli prodotto",
+      "blocks": [
+        { "type": "detail", "settings": { "title": "Qualità garantita", "items": "100% originale\nMateriali premium\nCuciture resistenti\nControllo qualità rigoroso" } },
+        { "type": "detail", "settings": { "title": "Vantaggi esclusivi", "items": "Spedizione gratuita\nPagamento alla consegna\nReso entro 14 giorni\nAssistenza dedicata" } },
+        { "type": "detail", "settings": { "title": "Consigli styling", "items": "Look estivo perfetto\nAbbinabile con jeans e shorts\nIdeale per ogni occasione\nMust-have di stagione" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

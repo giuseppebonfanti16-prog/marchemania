@@ -1,0 +1,76 @@
+<section class="mm-store-banner mm-scroll-reveal">
+  <div class="page-width">
+    <div class="mm-store-banner__grid">
+      <div class="mm-store-banner__image">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 900
+            | image_tag: loading: 'lazy', alt: section.settings.heading
+          }}
+        {%- else -%}
+          <img
+            src="https://cdn.shopify.com/s/files/1/1006/1804/3769/files/marche_mania_esterno.png?v=1780930643"
+            alt="Marche Mania negozio fisico"
+            loading="lazy"
+            width="900"
+            height="600"
+          >
+        {%- endif -%}
+      </div>
+      <div>
+        {%- if section.settings.heading != blank -%}
+          <h2 class="mm-section-heading">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        <div class="rte">{{ section.settings.text }}</div>
+        {%- if section.settings.button_label != blank -%}
+          <a href="{{ section.settings.button_link }}" class="mm-btn mm-btn--primary" style="margin-top: 1.5rem;">
+            {{ section.settings.button_label }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Negozio fisico",
+  "tag": "section",
+  "class": "mm-section-store",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Immagine negozio"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Vieni a trovarci in negozio"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Testo",
+      "default": "<p>Il nostro outlet fisico è il cuore pulsante di Marche Mania. Vetrine sempre aggiornate, saldi esclusivi e un team appassionato pronto ad aiutarti a trovare il look perfetto.</p><p>Acquista online con la stessa qualità e convenienza del negozio: spedizione gratuita, pagamento alla consegna e garanzia soddisfatti o rimborsati.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Pulsante"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link pulsante"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Negozio fisico"
+    }
+  ]
+}
+{% endschema %}

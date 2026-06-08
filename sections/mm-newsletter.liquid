@@ -1,0 +1,61 @@
+<section class="mm-newsletter mm-scroll-reveal">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="mm-section-heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="mm-section-subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+    {% form 'customer', class: 'mm-newsletter__form' %}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <input
+        type="email"
+        name="contact[email]"
+        class="mm-newsletter__input"
+        placeholder="{{ section.settings.placeholder }}"
+        required
+        aria-label="Email"
+      >
+      <button type="submit" class="mm-btn mm-btn--dark">{{ section.settings.button_label }}</button>
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Newsletter",
+  "tag": "section",
+  "class": "mm-section-newsletter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Titolo",
+      "default": "Non perdere i saldi esclusivi"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Sottotitolo",
+      "default": "Iscriviti e ricevi in anteprima le offerte Fuori Tutto e i codici sconto riservati."
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "Placeholder email",
+      "default": "La tua email"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Pulsante",
+      "default": "Iscriviti ora"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Newsletter"
+    }
+  ]
+}
+{% endschema %}

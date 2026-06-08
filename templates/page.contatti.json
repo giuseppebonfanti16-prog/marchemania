@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "hero": {
+      "type": "mm-page-content",
+      "settings": {
+        "title": "Contatti",
+        "subtitle": "Siamo qui per aiutarti — rispondiamo entro 24 ore"
+      }
+    },
+    "trust": {
+      "type": "mm-trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "📧", "title": "Email", "subtitle": "info@marchemania.it" } },
+        "t2": { "type": "item", "settings": { "icon": "💬", "title": "WhatsApp", "subtitle": "Assistenza rapida" } },
+        "t3": { "type": "item", "settings": { "icon": "🕐", "title": "Orari", "subtitle": "Lun-Sab 9:00-19:00" } },
+        "t4": { "type": "item", "settings": { "icon": "📍", "title": "Outlet fisico", "subtitle": "Visita il negozio" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": {}
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Scrivici un messaggio",
+        "heading_size": "h2",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "store": {
+      "type": "mm-store-banner",
+      "settings": {
+        "heading": "Vieni a trovarci",
+        "text": "<p>Il nostro outlet fisico è aperto dal lunedì al sabato. Vieni a scoprire le ultime novità e i saldi esclusivi dal vivo.</p>",
+        "button_label": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": ["hero", "trust", "form", "store"]
+}

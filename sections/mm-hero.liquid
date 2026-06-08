@@ -1,0 +1,108 @@
+<section class="mm-hero mm-scroll-reveal">
+  {%- if section.settings.image != blank -%}
+    <div
+      class="mm-hero__bg"
+      style="background-image: url('{{ section.settings.image | image_url: width: 1920 }}')"
+    ></div>
+  {%- endif -%}
+  <div class="mm-hero__overlay"></div>
+  <div class="page-width mm-hero__content">
+    {%- if section.settings.badge != blank -%}
+      <span class="mm-badge">{{ section.settings.badge }}</span>
+    {%- endif -%}
+    <h1 class="mm-hero__title">
+      {{ section.settings.title_line1 }}
+      {%- if section.settings.title_highlight != blank -%}
+        <em>{{ section.settings.title_highlight }}</em>
+      {%- endif -%}
+      {{ section.settings.title_line2 }}
+    </h1>
+    {%- if section.settings.tagline != blank -%}
+      <p class="mm-hero__tagline">{{ section.settings.tagline }}</p>
+    {%- endif -%}
+    <div class="mm-hero__cta-group">
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="mm-btn mm-btn--primary">
+          {{ section.settings.button_label }}
+        </a>
+      {%- endif -%}
+      {%- if section.settings.button_label_2 != blank -%}
+        <a href="{{ section.settings.button_link_2 }}" class="mm-btn mm-btn--outline">
+          {{ section.settings.button_label_2 }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "MM Hero",
+  "tag": "section",
+  "class": "mm-section-hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Immagine di sfondo"
+    },
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge",
+      "default": "ESTATE 2026"
+    },
+    {
+      "type": "text",
+      "id": "title_line1",
+      "label": "Titolo riga 1",
+      "default": "Grandi"
+    },
+    {
+      "type": "text",
+      "id": "title_highlight",
+      "label": "Titolo evidenziato",
+      "default": "Firme"
+    },
+    {
+      "type": "text",
+      "id": "title_line2",
+      "label": "Titolo riga 2",
+      "default": "a Prezzi Outlet"
+    },
+    {
+      "type": "textarea",
+      "id": "tagline",
+      "label": "Sottotitolo",
+      "default": "Nike, Adidas, Tommy Hilfiger, Max Mara, Liu Jo e tante altre. Saldi esclusivi fino al -70%."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Pulsante primario",
+      "default": "Scopri i saldi"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link pulsante primario"
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Pulsante secondario",
+      "default": "La nostra storia"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Link pulsante secondario"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MM Hero"
+    }
+  ]
+}
+{% endschema %}

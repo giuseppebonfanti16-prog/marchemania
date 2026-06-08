@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "hero": {
+      "type": "mm-page-content",
+      "settings": {
+        "title": "Chi siamo",
+        "subtitle": "Outlet di grandi firme dal cuore delle Marche"
+      }
+    },
+    "story": {
+      "type": "mm-brand-story",
+      "settings": {
+        "heading": "La nostra missione",
+        "text": "<p>Marche Mania è nato nel 2018 dalle Marche, regione di tradizione e stile, con una missione chiara: democratizzare la moda di marca.</p><p>Quello che è iniziato come un piccolo negozio di famiglia con vetrine piene di saldi e grandi firme, oggi è diventato un punto di riferimento per migliaia di clienti in tutta Italia.</p><p>Selezioniamo ogni capo con la stessa cura con cui lo esponiamo nella nostra vetrina fisica: autentico, di qualità, a un prezzo che fa sorridere.</p>",
+        "highlight": "\"La moda di marca non è un lusso. È una scelta. E noi la rendiamo possibile per tutti.\"",
+        "color_scheme": "scheme-1"
+      }
+    },
+    "features": {
+      "type": "mm-features-grid",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "icon": "👨‍👩‍👧", "title": "Negozio di famiglia", "text": "Passione e cura in ogni capo, come nel nostro outlet fisico." } },
+        "f2": { "type": "feature", "settings": { "icon": "🎯", "title": "Selezione rigorosa", "text": "Solo capi originali delle migliori firme internazionali." } },
+        "f3": { "type": "feature", "settings": { "icon": "❤️", "title": "Clienti al centro", "text": "Spedizione gratuita, pagamento alla consegna e reso facile." } }
+      },
+      "block_order": ["f1", "f2", "f3"],
+      "settings": { "heading": "I nostri valori" }
+    },
+    "store": {
+      "type": "mm-store-banner",
+      "settings": {
+        "heading": "Il nostro negozio",
+        "text": "<p>Vieni a trovarci nel nostro outlet fisico. Vetrine sempre aggiornate, manichini con le ultime novità e un team pronto ad aiutarti.</p>",
+        "button_label": "Contattaci",
+        "button_link": "shopify://pages/contatti"
+      }
+    },
+    "trust": {
+      "type": "mm-trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "🚚", "title": "Spedizione gratuita", "subtitle": "Su tutti gli ordini" } },
+        "t2": { "type": "item", "settings": { "icon": "💳", "title": "Pagamento alla consegna", "subtitle": "Zero rischi" } },
+        "t3": { "type": "item", "settings": { "icon": "✅", "title": "Garanzia reso", "subtitle": "14 giorni" } },
+        "t4": { "type": "item", "settings": { "icon": "🏷️", "title": "Originali", "subtitle": "100% autentici" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": {}
+    }
+  },
+  "order": ["hero", "story", "features", "store", "trust"]
+}

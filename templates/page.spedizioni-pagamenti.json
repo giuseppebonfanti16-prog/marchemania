@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "hero": {
+      "type": "mm-page-content",
+      "settings": {
+        "title": "Spedizioni e pagamenti",
+        "subtitle": "Compra in totale tranquillità"
+      }
+    },
+    "trust": {
+      "type": "mm-trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "🚚", "title": "Spedizione gratuita", "subtitle": "2-5 giorni lavorativi" } },
+        "t2": { "type": "item", "settings": { "icon": "💳", "title": "Pagamento alla consegna", "subtitle": "Contanti o POS" } },
+        "t3": { "type": "item", "settings": { "icon": "📦", "title": "Tracking SMS", "subtitle": "Segui il tuo ordine" } },
+        "t4": { "type": "item", "settings": { "icon": "🇮🇹", "title": "Solo Italia", "subtitle": "Consegna nazionale" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": {}
+    },
+    "features": {
+      "type": "mm-features-grid",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "icon": "🚚", "title": "Spedizione gratuita", "text": "Su tutti gli ordini, senza minimo di spesa. Consegna con corriere espresso in 2-5 giorni lavorativi." } },
+        "f2": { "type": "feature", "settings": { "icon": "💳", "title": "Pagamento alla consegna", "text": "Paga al corriere quando ricevi il pacco. Accettiamo contanti e pagamento con POS. Nessun anticipo." } },
+        "f3": { "type": "feature", "settings": { "icon": "📱", "title": "Tracking in tempo reale", "text": "Ricevi un SMS con il link per seguire il tuo ordine dalla spedizione alla consegna." } }
+      },
+      "block_order": ["f1", "f2", "f3"],
+      "settings": { "heading": "Come funziona" }
+    },
+    "faq": {
+      "type": "mm-faq",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "Quanto costa la spedizione?", "answer": "<p>La spedizione è <strong>sempre gratuita</strong> su tutti gli ordini, senza minimo di spesa.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "In quanto tempo arriva il pacco?", "answer": "<p>La consegna avviene in <strong>2-5 giorni lavorativi</strong> in tutta Italia.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "Posso pagare con carta alla consegna?", "answer": "<p>Sì! Il corriere accetta contanti e pagamento con POS (carta di credito/debito).</p>" } },
+        "q4": { "type": "question", "settings": { "question": "Spedite all'estero?", "answer": "<p>Al momento spediamo solo in Italia. Stiamo lavorando per espandere le consegne internazionali.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4"],
+      "settings": { "heading": "Domande frequenti" }
+    }
+  },
+  "order": ["hero", "trust", "features", "faq"]
+}

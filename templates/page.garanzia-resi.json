@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "hero": {
+      "type": "mm-page-content",
+      "settings": {
+        "title": "Garanzia e resi",
+        "subtitle": "Soddisfatti o rimborsati — sempre"
+      }
+    },
+    "trust": {
+      "type": "mm-trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "✅", "title": "14 giorni per il reso", "subtitle": "Senza domande" } },
+        "t2": { "type": "item", "settings": { "icon": "💰", "title": "Rimborso completo", "subtitle": "100% garantito" } },
+        "t3": { "type": "item", "settings": { "icon": "📦", "title": "Reso gratuito", "subtitle": "Ritiro a domicilio" } },
+        "t4": { "type": "item", "settings": { "icon": "🏷️", "title": "Originali", "subtitle": "Autenticità garantita" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": {}
+    },
+    "features": {
+      "type": "mm-features-grid",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "icon": "✅", "title": "Garanzia soddisfatti o rimborsati", "text": "Se non sei completamente soddisfatto del tuo acquisto, ti rimborsiamo integralmente entro 14 giorni." } },
+        "f2": { "type": "feature", "settings": { "icon": "📦", "title": "Reso semplice e gratuito", "text": "Contattaci e organizziamo il ritiro gratuito a domicilio. Nessun costo aggiuntivo per te." } },
+        "f3": { "type": "feature", "settings": { "icon": "🔒", "title": "Prodotti 100% originali", "text": "Ogni capo è selezionato e verificato. Autenticità garantita su tutte le grandi firme." } }
+      },
+      "block_order": ["f1", "f2", "f3"],
+      "settings": { "heading": "La nostra promessa" }
+    },
+    "faq": {
+      "type": "mm-faq",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "Come posso restituire un articolo?", "answer": "<p>Contattaci via email o WhatsApp entro 14 giorni dalla consegna. Organizzeremo il ritiro gratuito a domicilio.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "Quanto tempo ci vuole per il rimborso?", "answer": "<p>Il rimborso viene elaborato entro 5-7 giorni lavorativi dal ricevimento del reso.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "Posso cambiare taglia?", "answer": "<p>Certo! Contattaci e ti aiuteremo con il cambio taglia, soggetto a disponibilità.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3"],
+      "settings": { "heading": "Domande sui resi" }
+    }
+  },
+  "order": ["hero", "trust", "features", "faq"]
+}

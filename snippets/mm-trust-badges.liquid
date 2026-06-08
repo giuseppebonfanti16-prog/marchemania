@@ -1,0 +1,24 @@
+{% doc %}
+Renders Marche Mania trust badges for product pages.
+@example
+{% render 'mm-trust-badges' %}
+{% enddoc %}
+
+<div class="mm-product-trust">
+  <div class="mm-product-trust__item">
+    <span>🚚</span>
+    <span>{{ 'marche_mania.trust.free_shipping' | t }}</span>
+  </div>
+  <div class="mm-product-trust__item">
+    <span>💳</span>
+    <span>{{ 'marche_mania.trust.cod' | t }}</span>
+  </div>
+  <div class="mm-product-trust__item">
+    <span>✅</span>
+    <span>{{ 'marche_mania.trust.guarantee' | t }}</span>
+  </div>
+  <div class="mm-product-trust__item">
+    <span>🏷️</span>
+    <span>{{ 'marche_mania.trust.authentic' | t }}</span>
+  </div>
+</div>

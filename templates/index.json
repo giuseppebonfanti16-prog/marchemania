@@ -1,0 +1,167 @@
+{
+  "sections": {
+    "marquee": {
+      "type": "mm-marquee",
+      "blocks": {
+        "msg1": { "type": "message", "settings": { "text": "SPEDIZIONE GRATUITA", "highlight": "•" } },
+        "msg2": { "type": "message", "settings": { "text": "PAGAMENTO ALLA CONSEGNA", "highlight": "•" } },
+        "msg3": { "type": "message", "settings": { "text": "SALDI FINO AL -70%", "highlight": "•" } },
+        "msg4": { "type": "message", "settings": { "text": "GARANZIA SODDISFATTI O RIMBORSATI", "highlight": "•" } }
+      },
+      "block_order": ["msg1", "msg2", "msg3", "msg4"],
+      "settings": {}
+    },
+    "hero": {
+      "type": "mm-hero",
+      "settings": {
+        "badge": "ESTATE 2026 — FUORI TUTTO",
+        "title_line1": "Grandi ",
+        "title_highlight": "Firme",
+        "title_line2": " a Prezzi Outlet",
+        "tagline": "Nike, Adidas, Tommy Hilfiger, Max Mara, Liu Jo e tante altre. La mania delle grandi firme inizia qui.",
+        "button_label": "Scopri i saldi",
+        "button_link": "shopify://collections/all",
+        "button_label_2": "La nostra storia",
+        "button_link_2": "shopify://pages/la-nostra-storia"
+      }
+    },
+    "trust": {
+      "type": "mm-trust-bar",
+      "blocks": {
+        "t1": { "type": "item", "settings": { "icon": "🚚", "title": "Spedizione gratuita", "subtitle": "Consegna in 2-5 giorni" } },
+        "t2": { "type": "item", "settings": { "icon": "💳", "title": "Pagamento alla consegna", "subtitle": "Paga solo quando ricevi" } },
+        "t3": { "type": "item", "settings": { "icon": "✅", "title": "Soddisfatti o rimborsati", "subtitle": "Reso entro 14 giorni" } },
+        "t4": { "type": "item", "settings": { "icon": "🏷️", "title": "100% originali", "subtitle": "Grandi firme garantite" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4"],
+      "settings": {}
+    },
+    "deal": {
+      "type": "mm-deal-banner",
+      "settings": {
+        "text": "🔥 4 CAPI A 49,99€ — Offerta estiva limitata! Spedizione gratuita su tutti gli ordini"
+      }
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "I più venduti dell'estate",
+        "heading_size": "h1",
+        "description": "<p>I capi più richiesti del momento, selezionati dal nostro team outlet.</p>",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "countdown": {
+      "type": "mm-countdown",
+      "settings": {
+        "heading": "Fuori Tutto — Offerta a tempo",
+        "subheading": "I saldi estivi terminano presto. Non perdere fino al -70% sulle grandi firme.",
+        "end_date": "2026-08-31T23:59:59",
+        "button_label": "Acquista ora",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "brands": {
+      "type": "mm-brand-logos",
+      "blocks": {
+        "b1": { "type": "brand", "settings": { "name": "NIKE" } },
+        "b2": { "type": "brand", "settings": { "name": "ADIDAS" } },
+        "b3": { "type": "brand", "settings": { "name": "TOMMY HILFIGER" } },
+        "b4": { "type": "brand", "settings": { "name": "MAX MARA" } },
+        "b5": { "type": "brand", "settings": { "name": "LIU JO" } },
+        "b6": { "type": "brand", "settings": { "name": "CALVIN KLEIN" } },
+        "b7": { "type": "brand", "settings": { "name": "EA7" } },
+        "b8": { "type": "brand", "settings": { "name": "THE NORTH FACE" } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8"],
+      "settings": {
+        "heading": "Le firme che ami",
+        "subheading": "Selezione curata di capi originali delle migliori marche internazionali.",
+        "color_scheme": "scheme-1"
+      }
+    },
+    "story": {
+      "type": "mm-brand-story",
+      "settings": {
+        "heading": "La mania delle grandi firme",
+        "text": "<p>Tutto è iniziato nel cuore delle Marche, con un sogno semplice: rendere accessibile l'abbigliamento delle grandi firme a chi ama lo stile senza compromessi sul budget.</p><p>Marche Mania nasce come outlet di famiglia e diventa rapidamente il punto di riferimento per chi cerca Nike, Adidas, Tommy Hilfiger, Max Mara, Liu Jo e tante altre marche premium a prezzi imbattibili.</p>",
+        "highlight": "\"Non vendiamo solo abbigliamento. Vendiamo la passione per le grandi firme.\"",
+        "button_label": "Scopri la nostra storia",
+        "button_link": "shopify://pages/la-nostra-storia",
+        "color_scheme": "scheme-1"
+      }
+    },
+    "features": {
+      "type": "mm-features-grid",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "icon": "☀️", "title": "Stile estivo", "text": "Collezioni fresche e trendy per la bella stagione." } },
+        "f2": { "type": "feature", "settings": { "icon": "💰", "title": "Prezzi outlet", "text": "Sconti fino al 70% sulle migliori firme internazionali." } },
+        "f3": { "type": "feature", "settings": { "icon": "🔒", "title": "Acquisto sicuro", "text": "Pagamento alla consegna e reso gratuito entro 14 giorni." } }
+      },
+      "block_order": ["f1", "f2", "f3"],
+      "settings": { "heading": "Perché scegliere Marche Mania" }
+    },
+    "reviews": {
+      "type": "mm-reviews",
+      "blocks": {
+        "r1": { "type": "review", "settings": { "rating": 5, "quote": "Qualità eccellente e prezzi imbattibili. Ho trovato la mia Nike preferita a metà prezzo!", "author": "Marco R." } },
+        "r2": { "type": "review", "settings": { "rating": 5, "quote": "Spedizione velocissima e pagamento alla consegna comodissimo. Consigliatissimo!", "author": "Giulia M." } },
+        "r3": { "type": "review", "settings": { "rating": 5, "quote": "Tommy Hilfiger originali a prezzi da outlet. Finalmente un negozio serio!", "author": "Luca B." } }
+      },
+      "block_order": ["r1", "r2", "r3"],
+      "settings": { "heading": "Cosa dicono i nostri clienti", "color_scheme": "scheme-1" }
+    },
+    "newsletter": {
+      "type": "mm-newsletter",
+      "settings": {
+        "heading": "Non perdere i saldi esclusivi",
+        "subheading": "Iscriviti e ricevi in anteprima le offerte Fuori Tutto e i codici sconto riservati.",
+        "placeholder": "La tua email",
+        "button_label": "Iscriviti ora"
+      }
+    },
+    "faq": {
+      "type": "mm-faq",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "Come funziona il pagamento alla consegna?", "answer": "<p>Ordini online e paghi in contanti o con POS al corriere quando ricevi il pacco. Nessun anticipo richiesto.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "La spedizione è davvero gratuita?", "answer": "<p>Sì, su tutti gli ordini. Consegna in 2-5 giorni lavorativi in tutta Italia.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "I prodotti sono originali?", "answer": "<p>Assolutamente sì. Vendiamo esclusivamente capi originali delle grandi firme, selezionati dal nostro team.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3"],
+      "settings": { "heading": "Domande frequenti" }
+    }
+  },
+  "order": [
+    "marquee",
+    "hero",
+    "trust",
+    "deal",
+    "featured",
+    "countdown",
+    "brands",
+    "story",
+    "features",
+    "reviews",
+    "newsletter",
+    "faq"
+  ]
+}

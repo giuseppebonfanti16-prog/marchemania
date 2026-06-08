@@ -18,36 +18,12 @@
           "type": "announcement",
           "settings": {
             "text": "🔥 SALDI ESTIVI",
-            "link": "shopify://collections/all"
-          }
-        },
-        "announcement-2": {
-          "type": "announcement",
-          "settings": {
-            "text": "🚚 SPEDIZIONE GRATUITA su tutti gli ordini",
-            "link": "shopify://pages/spedizioni-pagamenti"
-          }
-        },
-        "announcement-3": {
-          "type": "announcement",
-          "settings": {
-            "text": "💳 PAGAMENTO ALLA CONSEGNA — Paga solo quando ricevi",
-            "link": "shopify://pages/spedizioni-pagamenti"
-          }
-        },
-        "announcement-4": {
-          "type": "announcement",
-          "settings": {
-            "text": "✅ GARANZIA SODDISFATTI O RIMBORSATI — 14 giorni",
-            "link": "shopify://pages/garanzia-resi"
+            "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-1",
-        "announcement-2",
-        "announcement-3",
-        "announcement-4"
+        "announcement-1"
       ],
       "settings": {
         "auto_rotate": true,

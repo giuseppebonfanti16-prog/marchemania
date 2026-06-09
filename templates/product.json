@@ -29,6 +29,7 @@
         },
         "rating": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'mm-product-rating-box' %}"
           }
